@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074242161F8377AA00DFBBBA /* Numbers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074242151F8377AA00DFBBBA /* Numbers.storyboard */; };
+		0742421A1F8378AF00DFBBBA /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074242191F8378AF00DFBBBA /* NumbersViewController.swift */; };
 		07B3108E1F7B1882007E422C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B3108D1F7B1882007E422C /* AppDelegate.swift */; };
 		07B310901F7B1882007E422C /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B3108F1F7B1882007E422C /* SimpleValidationViewController.swift */; };
 		07B310931F7B1882007E422C /* SimpleValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B310911F7B1882007E422C /* SimpleValidation.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		074242151F8377AA00DFBBBA /* Numbers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Numbers.storyboard; sourceTree = "<group>"; };
+		074242191F8378AF00DFBBBA /* NumbersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		07B3108A1F7B1882007E422C /* RxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B3108D1F7B1882007E422C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07B3108F1F7B1882007E422C /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				07B310941F7B1882007E422C /* Assets.xcassets */,
 				07B310961F7B1882007E422C /* LaunchScreen.storyboard */,
 				07B310991F7B1882007E422C /* Info.plist */,
+				074242151F8377AA00DFBBBA /* Numbers.storyboard */,
+				074242191F8378AF00DFBBBA /* NumbersViewController.swift */,
 			);
 			path = RxSample;
 			sourceTree = "<group>";
@@ -152,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07B310981F7B1882007E422C /* LaunchScreen.storyboard in Resources */,
+				074242161F8377AA00DFBBBA /* Numbers.storyboard in Resources */,
 				07B310951F7B1882007E422C /* Assets.xcassets in Resources */,
 				07B310931F7B1882007E422C /* SimpleValidation.storyboard in Resources */,
 			);
@@ -212,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0742421A1F8378AF00DFBBBA /* NumbersViewController.swift in Sources */,
 				07B310901F7B1882007E422C /* SimpleValidationViewController.swift in Sources */,
 				07B3108E1F7B1882007E422C /* AppDelegate.swift in Sources */,
 			);
