@@ -39,25 +39,28 @@ class SimpleValidationViewController: UIViewController {
             .map { $0.characters.count >= minimalPasswordLength }
             .shareReplay(1)
         
-        let everthingValid = Observable.combineLatest(usernameValid, passwordValid) { $0 && $1 }
+        let everythingValid = Observable.combineLatest(usernameValid, passwordValid) { $0 && $1 }
             .shareReplay(1)
         
-        usernameValid.bind(to: passwordOutlet.rx.isEnabled)
+        usernameValid
+            .bind(to: passwordOutlet.rx.isEnabled)
             .disposed(by: disposeBag)
         
-        usernameValid.bind(to: usernameValidOutlet.rx.isHidden)
+        usernameValid
+            .bind(to: usernameValidOutlet.rx.isHidden)
             .disposed(by: disposeBag)
         
-        passwordValid.bind(to: passwordValidOutlet.rx.isHidden)
+        passwordValid
+            .bind(to: passwordValidOutlet.rx.isHidden)
             .disposed(by: disposeBag)
         
-        everthingValid.bind(to: doSomethingOutlet.rx.isEnabled)
+        everythingValid
+            .bind(to: doSomethingOutlet.rx.isEnabled)
             .disposed(by: disposeBag)
         
         doSomethingOutlet.rx.tap
             .subscribe(onNext: { [weak self] in self?.showAlert() })
             .disposed(by: disposeBag)
-        
         
     }
 
