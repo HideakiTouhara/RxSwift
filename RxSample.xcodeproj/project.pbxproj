@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		074242161F8377AA00DFBBBA /* Numbers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074242151F8377AA00DFBBBA /* Numbers.storyboard */; };
 		0742421A1F8378AF00DFBBBA /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074242191F8378AF00DFBBBA /* NumbersViewController.swift */; };
+		0742421D1F85FA8600DFBBBA /* SimpleUIPickerViewExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0742421C1F85FA8600DFBBBA /* SimpleUIPickerViewExample.storyboard */; };
+		0742421F1F85FAB600DFBBBA /* SimplePickerViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0742421E1F85FAB600DFBBBA /* SimplePickerViewExampleViewController.swift */; };
+		074242211F85FAF700DFBBBA /* CustomPickerViewAdapterExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074242201F85FAF700DFBBBA /* CustomPickerViewAdapterExampleViewController.swift */; };
 		07B3108E1F7B1882007E422C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B3108D1F7B1882007E422C /* AppDelegate.swift */; };
 		07B310901F7B1882007E422C /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B3108F1F7B1882007E422C /* SimpleValidationViewController.swift */; };
 		07B310931F7B1882007E422C /* SimpleValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B310911F7B1882007E422C /* SimpleValidation.storyboard */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		074242151F8377AA00DFBBBA /* Numbers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Numbers.storyboard; sourceTree = "<group>"; };
 		074242191F8378AF00DFBBBA /* NumbersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
+		0742421C1F85FA8600DFBBBA /* SimpleUIPickerViewExample.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleUIPickerViewExample.storyboard; sourceTree = "<group>"; };
+		0742421E1F85FAB600DFBBBA /* SimplePickerViewExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePickerViewExampleViewController.swift; sourceTree = "<group>"; };
+		074242201F85FAF700DFBBBA /* CustomPickerViewAdapterExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerViewAdapterExampleViewController.swift; sourceTree = "<group>"; };
 		07B3108A1F7B1882007E422C /* RxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B3108D1F7B1882007E422C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07B3108F1F7B1882007E422C /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +50,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		074242221F85FAFB00DFBBBA /* SimpleValidation */ = {
+			isa = PBXGroup;
+			children = (
+				07B3108F1F7B1882007E422C /* SimpleValidationViewController.swift */,
+				07B310911F7B1882007E422C /* SimpleValidation.storyboard */,
+			);
+			name = SimpleValidation;
+			sourceTree = "<group>";
+		};
+		074242231F85FB0D00DFBBBA /* Numbers */ = {
+			isa = PBXGroup;
+			children = (
+				074242151F8377AA00DFBBBA /* Numbers.storyboard */,
+				074242191F8378AF00DFBBBA /* NumbersViewController.swift */,
+			);
+			name = Numbers;
+			sourceTree = "<group>";
+		};
+		074242241F85FB2200DFBBBA /* UIPickerViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				0742421C1F85FA8600DFBBBA /* SimpleUIPickerViewExample.storyboard */,
+				0742421E1F85FAB600DFBBBA /* SimplePickerViewExampleViewController.swift */,
+				074242201F85FAF700DFBBBA /* CustomPickerViewAdapterExampleViewController.swift */,
+			);
+			name = UIPickerViewExample;
+			sourceTree = "<group>";
+		};
 		07B310811F7B1882007E422C = {
 			isa = PBXGroup;
 			children = (
@@ -65,14 +99,13 @@
 		07B3108C1F7B1882007E422C /* RxSample */ = {
 			isa = PBXGroup;
 			children = (
+				074242241F85FB2200DFBBBA /* UIPickerViewExample */,
+				074242231F85FB0D00DFBBBA /* Numbers */,
+				074242221F85FAFB00DFBBBA /* SimpleValidation */,
 				07B3108D1F7B1882007E422C /* AppDelegate.swift */,
-				07B3108F1F7B1882007E422C /* SimpleValidationViewController.swift */,
-				07B310911F7B1882007E422C /* SimpleValidation.storyboard */,
 				07B310941F7B1882007E422C /* Assets.xcassets */,
 				07B310961F7B1882007E422C /* LaunchScreen.storyboard */,
 				07B310991F7B1882007E422C /* Info.plist */,
-				074242151F8377AA00DFBBBA /* Numbers.storyboard */,
-				074242191F8378AF00DFBBBA /* NumbersViewController.swift */,
 			);
 			path = RxSample;
 			sourceTree = "<group>";
@@ -159,6 +192,7 @@
 			files = (
 				07B310981F7B1882007E422C /* LaunchScreen.storyboard in Resources */,
 				074242161F8377AA00DFBBBA /* Numbers.storyboard in Resources */,
+				0742421D1F85FA8600DFBBBA /* SimpleUIPickerViewExample.storyboard in Resources */,
 				07B310951F7B1882007E422C /* Assets.xcassets in Resources */,
 				07B310931F7B1882007E422C /* SimpleValidation.storyboard in Resources */,
 			);
@@ -219,7 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0742421F1F85FAB600DFBBBA /* SimplePickerViewExampleViewController.swift in Sources */,
 				0742421A1F8378AF00DFBBBA /* NumbersViewController.swift in Sources */,
+				074242211F85FAF700DFBBBA /* CustomPickerViewAdapterExampleViewController.swift in Sources */,
 				07B310901F7B1882007E422C /* SimpleValidationViewController.swift in Sources */,
 				07B3108E1F7B1882007E422C /* AppDelegate.swift in Sources */,
 			);
